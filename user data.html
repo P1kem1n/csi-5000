@@ -68,6 +68,11 @@
         </script>
         <!--        //this is where firebase ends-->
          
+        <script>
+            var database = firebase.database();
+            var recentPostsRef = firebase.database().ref('posts').limitToFirst(20);
+        </script>
+            
         <div class="sidenav"> 
                       
                 <a href="admin.html" class="w3-bar-item w3-button"> <b> Admin</b></a>
