@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name ="author" content = "Kyndall Briana Shaw">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <a href ="file:///H:/public_html/user data.html"></a>
+    <title>User Data</title>  
+     <section style = "text-align:center">
+         
+    </section>
+    
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+        <div class="w3-container w3-black">
+            <h1 class= "italic">Golf Time Player Manager Admin Portal</h1>
+    
+        <p id = "Time"></p>
+        <script>
+           var d = new Date();
+           document.getElementById("Time").innerHTML = d;
+                        
+        </script>
+    </div> 
+    
+    </head>
+    
+    <style>
+        h1{
+            text-align: center;
+            font-style: "Lucida Console";
+        }
+        
+        p{
+            text-align: center;
+        }
+        
+        table,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th,td{
+            padding: 5px;
+        }
+        
+    </style>
+    
+    <body>
+        
+        <!--        // this is where firebase starts-->
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+        <script>
+            //   Initialize Firebase sdasdasd
+            var config = {
+                apiKey: "AIzaSyATCRkV4mpD8R897M7hwa_GYxfcY6D11p8",
+                authDomain: "csi-4999-965dc.firebaseapp.com",
+                databaseURL: "https://csi-4999-965dc.firebaseio.com",
+                projectId: "csi-4999-965dc",
+                storageBucket: "csi-4999-965dc.appspot.com",
+                messagingSenderId: "1075661896334"
+            };
+            firebase.initializeApp(config);
+
+        </script>
+        <!--        //this is where firebase ends-->
+         
+        <div class="sidenav"> 
+                      
+                <a href="admin.html" class="w3-bar-item w3-button"> <b> Admin</b></a>
+                
+                <a href="Golf%20Courses.html" class="w3-bar-item w3-button"> <b>Golf Courses</b></a>
+            
+                <a href="index.html" class="w3-bar-item w3-button" style="float: right"><b>Logout</b></a>
+                        
+        </div>
+                       
+          
+    </body>
+</html>
