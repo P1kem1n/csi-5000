@@ -1,0 +1,45 @@
+[
+  {
+  "User_Info": {
+      "name": "Nickolas Lektzian",
+      "Date_of_birth": "02/29/96",
+       "Address": "323232 here",
+      "Country": "USA",
+       "Email": "Nrlektzian@oakland.edu",
+      "Gender": "M",
+      "contact_number": "2488213559"
+ },
+   "User_Login": {
+      "Username": "p1kem1n",
+       "mainPassword": "football10"
+      
+  },
+      "User_Score":{
+          "best_score":25,
+          "Average_score":225,
+          "Lowest_score":245,
+          "Most_recent_score":2765,
+          "CurrentScore":285,
+          "Handicap":925,
+  }
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+    
+]
