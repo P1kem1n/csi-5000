@@ -6,12 +6,10 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <a href ="file:///H:/public_html/index.html"></a>
-    <title>Home</title>  
-     <section style = "text-align:center;">         
-    </section>
-    
+    <title>Home</title>    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        
+       
+    
         <div class="w3-container w3-black">
             <h1 class= "italic">Golf Time Player Manager Admin Portal</h1>
     
@@ -20,255 +18,136 @@
            var d = new Date();
            document.getElementById("Time").innerHTML = d;
                         
-        </script>
-         
-        
-        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
-        
-        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
-        
-        <script src="./app.js"></script>
-            
-       </div>     
-    </head>
+        </script>      
+                   
+       </div>   
+    
+     </head>
     
     <style>
         h1{
-            text-align: left;
+            text-align: center;
             font-style: "Lucida Console";
         }
         
         p{
-            text-align: left;
+            text-align: center;
         }
         
-        body{
-            background-image: url("golf.jpg");
-            background-repeat: no-repeat;
-            background-size: auto;
-        }
-        
-        input{
-            width:auto;    
-            padding: 12px;
-            border: 1px solid #fff;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-        }
-                
-        input[type=submit]{
-            background-color: #000;
-            color: chartreuse;             
-        }
-        
-        .container{
-          opacity: inherit;
-          padding: 20px;           
-        }
-        
-        #message{
-            display: none;
-            background: #000;
-            color: chartreuse;
-            position: relative;
-            padding: 20px;
-            margin-top: 10px;
-        }
-         
-        #message p{
-            padding: 10px 35px;            
-            font-size: 18px;
-        }
-        
-        .valid{
-            color: green;                 
-        }
-        
-        .valid:before{
-            position: relative;
-            left: -35px;
-            content: open-quote;
-        }
-        
-        .invalid{
-            color: red;    
-        }
-        
-        .invalid:before{
-            position: relative;
-            left: -35px;
-            content: close-quote;
-        }
-        
-        .body:sidenav{
-            font-family: "Lato", sans-serif;
-        }
-        
-        .sidenav{
-            height: 100%;
-            width: 368px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            right: 0;
-            background-color: #000;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
-        
-        .sidenav a{
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #fff;
-            display: block;
-        }
-        
-        .sidenav a:hover{
-            color: #f1f1f1;
-        }
-    </style>
-    
-    <body>
-<!--        // this is where firebase starts-->
-<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
-<script>
-//   Initialize Firebase sdasdasd
-  var config = {
-    apiKey: "AIzaSyATCRkV4mpD8R897M7hwa_GYxfcY6D11p8",
-    authDomain: "csi-4999-965dc.firebaseapp.com",
-    databaseURL: "https://csi-4999-965dc.firebaseio.com",
-    projectId: "csi-4999-965dc",
-    storageBucket: "csi-4999-965dc.appspot.com",
-    messagingSenderId: "1075661896334"
-  };
-  firebase.initializeApp(config);
+            body {font-family: Arial, Helvetica, sans-serif;}
+        form {border: 3px solid #f1f1f1;}
 
-</script>
-<!--        //this is where firebase ends-->
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+          background-color: black;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 75%;
+        }
+
+        button:hover {
+          opacity: 0.8;
+        }
+
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: red;
+        }
+
+        .imgcontainer {
+          text-align: center;
+          margin: 9px 0 6px 0;
+        }
+
+        img.avatar {
+          width: 15%;
+          border-radius: 15%;
+        }
+
+        .container {
+          padding: 10px;
+        }
+
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+     
+        @media screen and (max-width: 50px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+    
+    </style>
+
+    <body>
         
-    <h1 id ="hey"></h1>    
+        
+        <!--        // this is where firebase starts-->
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
         <script>
-            var hey = document.getElementById('hey');
-            var dbRef = firebase.database().ref().child('happy');
-            dbRef.on('value', snap => hey.innerText = snap.val());
+            //   Initialize Firebase sdasdasd
+            var config = {
+                apiKey: "AIzaSyATCRkV4mpD8R897M7hwa_GYxfcY6D11p8",
+                authDomain: "csi-4999-965dc.firebaseapp.com",
+                databaseURL: "https://csi-4999-965dc.firebaseio.com",
+                projectId: "csi-4999-965dc",
+                storageBucket: "csi-4999-965dc.appspot.com",
+                messagingSenderId: "1075661896334"
+            };
+            firebase.initializeApp(config);
+
         </script>
+        <!--        //this is where firebase ends-->
         
+        <script>
+            function confirmInput(){
+                fname = document.forms[0].fname.value;
+            }
+        
+        </script>  
+        
+       
+        <form onsubmit="confirmInput()" action="admin.html">
+            <div class="imgcontainer">
+            <img src="admin%20avatar.png" alt="Avatar" class="avatar">
+            </div>
+
         <div class="container">
-        
-            <form action= "/action_page.php">
-                <label for="email">Email</label> 
-                    <input type="text" id="email" name="email" required>
-                
-                <label for="password">Password</label>
-                    <input type="password" id="pswrd" name="pswrd" pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, and lowecase letter, and at least 8 or mare characters" required>
-                
-                <input type="submit" value="Submit">
-             </form>
-            
+            <label for="email"><b>Email</b></label>
+            <input type="text" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
         </div>
-        
-        <div id="message">
-            <h3>Password must contain the following</h3>
-            
-            <p id="letter" class="invalid"> A <b>lowercase</b> letter</p>
-            
-            <p id="capital" class="invalid"> A <b>capital (uppercase)</b> letter</p>
-            
-             <p id="number" class="invalid"> A <b>number</b> </p>
-            
-             <p id="length" class="invalid"> Minimum <b>  8 characters</b></p>
-        </div>
-        
-        <script>
-            var myInput= document.getElementById("pswrd");
-            
-            var letter= document.getElementById("letter");
-            
-            var capital= document.getElementById("capital");
-            
-            var number= document.getElementById("number");
-            
-            var length= document.getElementById("length");
-            
-            myInput.onfocus= function(){
-                document.getElementById("message").style.display = "block";      
-            }
-            
-            myInput.onblur= function(){
-                document.getElementById("message").style.display = "none";
-            }
-            
-            myInput.onkeyup= function(){
-               var lowerCaseLetters = /[a-z]/g;
-                
-                if(myInput.value.match(lowerCaseLetters)){
-                    
-                    letter.classList.remove("invalid");
-                
-                    letter.classList.add("valid");
-            }
-                 else
-                    {
-                       letter.classList.add("valid"); letter.classList.remove("invalid");
-                    }           
-            }
-            
-            var upperCaseLetters = /[a-z]/g;{
-                
-                if(myInput.value.match(upperCaseLetters)){
-                    
-                    capital.classList.remove("invalid");
-                
-                    capital.classList.add("valid");
-                }
-                 else
-                    {
-                       capital.classList.add("valid"); capital.classList.remove("invalid");
-                    }             
-            }
-            
-            var numbers= /[0-9]/g;{
-                
-                if(myInput.value.match(numbers)){
-                    
-                    number.classList.remove("invalid");
-                
-                    number.classList.add("valid");
-            }
-                 else
-                    {
-                       number.classList.add("valid"); number.classList.remove("invalid");
-                    }                 
-            }
-            
-            
-              if(myInput.value.length >= 8){
-                    
-                    length.classList.remove("invalid");
-                
-                    length.classList.add("valid");
-            }
-                 else
-                    {
-                       length.classList.add("valid"); length.classList.remove("invalid");
-                    }           
-            
-        </script>
-        
-        <div class="sidenav"> 
-        
-            <h3 class="w3-bar-item"><b> Select one of the Following</b></h3>
-                <a href="golf%20courses.html" class="w3-bar-item w3-button">Golf Courses</a>
-            
-                <a href="sessions.html" class="w3-bar-item w3-button">Sessions</a>
-            
-                <a href="admin.html" class="w3-bar-item w3-button">Admin</a>
-        </div>
-        
+
+         <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
     </body>   
-            
 </html>
        
