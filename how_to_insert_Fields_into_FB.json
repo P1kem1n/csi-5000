@@ -1,6 +1,7 @@
 [
-  {
-  "User_Info": {
+   { 
+        "User_info":{   
+      "UID":1,
       "name": "Nickolas Lektzian",
       "Date_of_birth": "02/29/96",
        "Address": "323232 here",
@@ -9,37 +10,55 @@
       "Gender": "M",
       "contact_number": "2488213559"
  },
-   "User_Login": {
-      "Username": "p1kem1n",
+    
+        "User_login":{
+   
+       "UID":1,
+       "Username": "p1kem1n",
        "mainPassword": "football10"
       
-  },
+  },  
       "User_Score":{
+          
+          "UID":1,
           "best_score":25,
           "Average_score":225,
           "Lowest_score":245,
           "Most_recent_score":2765,
           "CurrentScore":285,
-          "Handicap":925,
-  }
+          "Handicap":925
+  },
+      "Admin_info":{
+          
+      "AID": 1,
+      "Name":"Nickolas Lektzian",
+       "Date_of_birth": "02/29/96",
+       "Address": "323232 here",
+      "title": "Manager",
+      "salary":40000,
+      "Office_Location":"423 w",
+      "date_of_joining":"02/15/01"
+  },
+      "Admin_login":{
       
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  }
+        "AID": 1,
+        "Username":"hellohappy",
+        "mainPassword":"123456"
+    }, 
+       "Golf_Course_info": {
+           
+        "GCID":1,
+        "Created_By":"Nickolas Lektzian",
+        "Holes":9,
+        "address":"123213 herethere",
+        "name":"awesome golf course",
+        "Phone_number":"248-555-9998",
+        "price":"$400",
+        "image":"imageurl"
+}
+    
+    }
+
     
 ]
+
