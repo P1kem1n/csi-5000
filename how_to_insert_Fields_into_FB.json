@@ -1,66 +1,55 @@
-
-[
-   { 
-        "User_info":{   
-      "UID":1,
-      "name": "Nickolas Lektzian",
-      "Date_of_birth": "02/29/96",
-       "Address": "323232 here",
-      "Country": "USA",
-       "Email": "Nrlektzian@oakland.edu",
-      "Gender": "M",
-      "contact_number": "2488213559"
- },
-    
-        "User_login":{
-   
-       "UID":1,
-       "Username": "p1kem1n",
-       "mainPassword": "football10"
-      
-  },  
-      "User_Score":{
-          
-          "UID":1,
-          "best_score":25,
-          "Average_score":225,
-          "Lowest_score":245,
-          "Most_recent_score":2765,
-          "CurrentScore":285,
-          "Handicap":925
-  },
-      "Admin_info":{
-          
-      "AID": 1,
-      "Name":"Nickolas Lektzian",
-       "Date_of_birth": "02/29/96",
-       "Address": "323232 here",
-      "title": "Manager",
-      "salary":40000,
-      "Office_Location":"423 w",
-      "date_of_joining":"02/15/01"
-  },
-      "Admin_login":{
-      
-        "AID": 1,
-        "Username":"hellohappy",
-        "mainPassword":"123456"
-    }, 
-       "Golf_Course_info": {
-           
-        "GCID":1,
-        "Created_By":"Nickolas Lektzian",
-        "Holes":9,
-        "address":"123213 herethere",
-        "name":"awesome golf course",
-        "Phone_number":"248-555-9998",
-        "price":"$400",
-        "image":"imageurl"
-}
-    
+{
+  
+    "Admin_info" : {
+      "AID" : 1,
+      "Address" : "323232 here",
+      "Date_of_birth" : "02/29/96",
+      "Name" : "Nickolas Lektzian",
+      "Office_Location" : "423 w",
+      "date_of_joining" : "02/15/01",
+      "salary" : 40000,
+      "title" : "Manager"
+    },
+    "Admin_login" : {
+      "AID" : 1,
+      "Username" : "hellohappy",
+      "mainPassword" : "123456"
+    },
+    "Golf_Course_info" : {
+      "Created_By" : "Nickolas Lektzian",
+      "GCID" : 1,
+      "Holes" : 9,
+      "Phone_number" : "248-555-9998",
+      "address" : "123213 herethere",
+      "image" : "imageurl",
+      "name" : "awesome golf course",
+      "price" : "$400"
+    },
+    "User_Score" : {
+      "Average_score" : 225,
+      "CurrentScore" : 285,
+      "Handicap" : 925,
+      "Lowest_score" : 245,
+      "Most_recent_score" : 2765,
+      "UID" : 1,
+      "best_score" : 25
+    },
+    "User_info" : {
+      "Address" : "323232 here",
+      "Country" : "USA",
+      "Date_of_birth" : "02/29/96",
+      "Email" : "Nrlektzian@oakland.edu",
+      "Gender" : "M",
+      "UID" : 1,
+      "contact_number" : "2488213559",
+      "name" : "Nickolas Lektzian"
+    },
+    "User_login" : {
+      "UID" : 1,
+      "Username" : "p1kem1n",
+      "mainPassword" : "football10"
     }
-
-    
-]
+  
+}
 
 
