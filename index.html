@@ -132,6 +132,29 @@
     </style>
     
     <body>
+<!--        // this is where firebase starts-->
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script>
+//   Initialize Firebase sdasdasd
+  var config = {
+    apiKey: "AIzaSyATCRkV4mpD8R897M7hwa_GYxfcY6D11p8",
+    authDomain: "csi-4999-965dc.firebaseapp.com",
+    databaseURL: "https://csi-4999-965dc.firebaseio.com",
+    projectId: "csi-4999-965dc",
+    storageBucket: "csi-4999-965dc.appspot.com",
+    messagingSenderId: "1075661896334"
+  };
+  firebase.initializeApp(config);
+
+</script>
+<!--        //this is where firebase ends-->
+        
+    <h1 id ="hey"></h1>    
+        <script>
+            var hey = document.getElementById('hey');
+            var dbRef = firebase.database().ref().child('happy');
+            dbRef.on('value', snap => hey.innerText = snap.val());
+        </script>
         
         <div class="container">
         
