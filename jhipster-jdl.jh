@@ -1,0 +1,141 @@
+
+
+entity Useradmininfo {
+	firstname String,
+    dateofbirth String,
+    lastname String,
+    address String,
+    contactnumber String,
+    title String,
+    salary String,
+    officelocation String,
+    dateofjoining String
+    useradminid Int,
+    useradminsuggestionsid Int
+}
+entity Useradmin{
+useradminid Int,
+username String,
+mainpassword String
+}
+entity Employeesuggestions{
+useradminsuggestionsid Int,
+suggestionsform String,
+suggestionsto String,
+suggestionssubject String,
+suggestionsdate String
+}
+
+entity Userlogin {
+userid Int,
+username String,
+mainpassword String
+}
+
+entity Userinfo{
+userid Int,
+name String,
+dateofbirth String,
+address String,
+county String,
+email String,
+gender String,
+contactnumber String
+}
+
+entity Userprofile{
+userid Int,
+userscore String
+}
+
+entity Sessions{
+sessionsid Int,
+golfcourseid Int,
+userid Int,
+userscore String,
+dateandtimecreated String,
+duration String,
+location String
+}
+
+entity Golfcourse {
+golfcourseid Int,
+useradminid Int,
+golfcourseholeid Int,
+holes Int,
+address String,
+userratings String,
+name String,
+phonenumber String,
+publicorprivate String,
+price String,
+image Image
+}
+
+entity Golfcourseholes {
+goldcourseholeid Int,
+waittime String,
+holenumber Int,
+amountofplayershere String,
+location String,
+image Image
+}
+entity Userscores{
+userscore String,
+bestscore String,
+averagescore String,
+lowestscore String,
+mostrecentscore String,
+currentscore String,
+handicap String
+
+}
+
+relationship OneToOne {
+Userinfo{userid} to Userlogin{userid},
+Userprofile{userid} to Userinfo{userid},
+Golfcourse{golfcourseid} to Sessions{golfcourseid},
+Useradmininfo{useradminid} to Useradmin{useradminid},
+Userprofile{userscore} to Userscores{userscore}
+}
+
+relationship ManyToMany {
+Sessions{userid} to Userprofile{userid},
+Sessions{userscore} to Userscores{userscore},
+Useradmininfo{useradminid} to Golfcourse{useradminid}
+}
+
+relationship OneToMany {
+Golfcourse{golfcourseholeid} to Golfcourseholes{golfcourseholeid}
+Useradmininfo{useradminsuggestionsid} to Employeesuggestions{useradminsuggestionsid}
+}
+
+
+
+entity Category {
+name String
+}
+
+entity Blog{
+name String,
+content String,
+createat ZoneDateTime
+}
+
+relationship OneToMany{
+Category{categoryBlog} to Blog{category(name)}
+}
+
+
+// Set pagination options
+paginate JobHistory, Employee with infinite-scroll
+paginate Job with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
